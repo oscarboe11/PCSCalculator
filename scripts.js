@@ -1,4 +1,13 @@
 
+$(document).ready(function(){
+    $("li").click(function() {
+        value = $(this).attr("value");
+        curr = $("#noteInput").val() 
+        $("#noteInput").val(curr + value);
+    });
+  
+  });
+
 function start() {
     set = document.getElementById("noteInput").value;
     set = set.replace(/\s/g, "");
